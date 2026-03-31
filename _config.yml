@@ -1,7 +1,7 @@
 title: Arruko Labs
 description: AI systems and automation studio
-baseurl: ""
-url: "https://arruko.labs" # update with real domain
+baseurl: "/arruko-labs-site"
+url: "https://codingadrian.github.io" # update with real domain
 
 # Build
 markdown: kramdown
