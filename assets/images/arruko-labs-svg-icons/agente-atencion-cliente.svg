@@ -1,0 +1,12 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Agente de atención al cliente</title>
+  <g stroke="#0B1020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 24H36C39.314 24 42 26.686 42 30V40C42 43.314 39.314 46 36 46H26L18 53V46H16C12.686 46 10 43.314 10 40V30C10 26.686 12.686 24 16 24Z"/>
+    <circle cx="56" cy="36" r="6"/>
+    <path d="M42 35H50"/>
+    <path d="M62 35H74"/>
+    <path d="M70 31L74 35L70 39"/>
+    <path d="M60 60H80C83.314 60 86 62.686 86 66V76C86 79.314 83.314 82 80 82H70L62 89V82H60C56.686 82 54 79.314 54 76V66C54 62.686 56.686 60 60 60Z"/>
+    <path d="M66 71H74"/>
+  </g>
+</svg>

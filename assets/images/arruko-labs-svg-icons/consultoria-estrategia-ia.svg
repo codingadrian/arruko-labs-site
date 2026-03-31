@@ -1,0 +1,17 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Consultoría de estrategia IA</title>
+  <g stroke="#0B1020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="16" y="18" width="64" height="60" rx="8"/>
+    <path d="M32 18V78" opacity="0.35"/>
+    <path d="M48 18V78" opacity="0.35"/>
+    <path d="M64 18V78" opacity="0.35"/>
+    <path d="M16 33H80" opacity="0.35"/>
+    <path d="M16 48H80" opacity="0.35"/>
+    <path d="M16 63H80" opacity="0.35"/>
+    <circle cx="24" cy="64" r="4"/>
+    <circle cx="46" cy="48" r="4"/>
+    <circle cx="72" cy="28" r="4"/>
+    <path d="M28 62L42 50"/>
+    <path d="M50 46L68 30"/>
+  </g>
+</svg>

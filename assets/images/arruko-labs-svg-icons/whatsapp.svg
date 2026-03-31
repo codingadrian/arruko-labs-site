@@ -1,0 +1,31 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="48" cy="48" r="36" stroke="black" stroke-width="2"/>
+
+  <!-- Chat bubble -->
+  <path d="M48 24
+           C34 24 24 34 24 46
+           C24 54 28 60 34 64
+           L32 72
+           L40 68
+           C43 69 45 70 48 70
+           C62 70 72 60 72 48
+           C72 34 62 24 48 24Z"
+        stroke="black" stroke-width="2" fill="none"/>
+
+  <!-- Phone shape -->
+  <path d="M42 40
+           C44 44 48 48 52 50
+           L56 46
+           C57 45 58 45 59 46
+           L64 50
+           C65 51 65 53 64 54
+           C62 57 58 60 54 60
+           C44 60 36 52 36 42
+           C36 38 39 34 42 32
+           C43 31 45 31 46 32
+           L50 37
+           C51 38 51 39 50 40
+           L46 44"
+        stroke="black" stroke-width="2" fill="none"/>
+</svg>

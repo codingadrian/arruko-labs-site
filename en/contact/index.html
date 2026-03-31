@@ -1,0 +1,100 @@
+---
+layout: page
+lang: en
+title: Contact
+description: Write to us. The first conversation is free.
+---
+
+<div class="contact-page">
+
+  <p class="contact-intro">The first conversation is free and no-commitment. Tell us what's happening in your organization. If we can help, we'll tell you how. If we can't, we'll tell you that too.</p>
+
+  <div class="contact-layout">
+
+    <div class="contact-form-wrapper">
+      <h2>Send us a message</h2>
+      <!-- Form will be connected to Google Sheets via Apps Script -->
+      <form class="contact-form" id="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre">Full name <span class="required">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="empresa">Company or organization</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Your company name (optional)">
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">What are you interested in?</label>
+          <select id="servicio" name="servicio">
+            <option value="" disabled selected>Select a service</option>
+            <option value="knowledge">Internal knowledge assistant</option>
+            <option value="chat">Customer-facing chat agent</option>
+            <option value="automation">Workflow automation</option>
+            <option value="consulting">AI strategy consulting</option>
+            <option value="other">Not sure / Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Tell us about your situation <span class="required">*</span></label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Briefly describe the problem you want to solve or what you need..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Send message</button>
+
+        <p class="form-note">We respond within 24 hours on business days.</p>
+      </form>
+
+      <div class="form-success" id="form-success" style="display:none;">
+        <h3>✓ Message received</h3>
+        <p>Thank you, we'll be in touch soon.</p>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h2>Or contact us directly</h2>
+
+      <div class="contact-info-item">
+        <img src="/assets/images/arruko-labs-svg-icons/correo.svg" alt="Email" class="contact-icon">
+        <div>
+          <p class="contact-info-label">Email</p>
+          <a href="mailto:hello@arruko.ai">hello@arruko.ai</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <img src="/assets/images/arruko-labs-svg-icons/whatsapp.svg" alt="WhatsApp" class="contact-icon">
+        <div>
+          <p class="contact-info-label">WhatsApp</p>
+          <a href="https://wa.me/50600000000" target="_blank">Message on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <img src="/assets/images/arruko-labs-svg-icons/ubicacion.svg" alt="Location" class="contact-icon">
+        <div>
+          <p class="contact-info-label">Location</p>
+          <p>Costa Rica — serving clients across Latin America</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  // TODO: Replace action URL with Google Apps Script web app URL
+  // fetch('YOUR_APPS_SCRIPT_URL', { method: 'POST', body: new FormData(this) })
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+});
+</script>

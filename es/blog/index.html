@@ -1,0 +1,26 @@
+---
+layout: page
+lang: es
+title: Blog
+description: Artículos sobre IA, automatización y sistemas para organizaciones.
+---
+
+<div class="blog-index">
+  <p class="blog-intro">Pensamos en voz alta sobre IA aplicada, automatización y cómo las organizaciones pueden operar mejor. Sin exageración.</p>
+
+  <div class="posts-list">
+    {% assign es_posts = site.posts | where: "lang", "es" %}
+    {% if es_posts.size > 0 %}
+      {% for post in es_posts %}
+        <article class="post-preview">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p class="post-meta">{{ post.date | date: "%d de %B, %Y" }}</p>
+          {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>{% endif %}
+          <a href="{{ post.url }}" class="read-more">Leer →</a>
+        </article>
+      {% endfor %}
+    {% else %}
+      <p class="no-posts">Próximamente. Estamos escribiendo.</p>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/{{ page.lang }}/">
+      <!-- Replace: swap img src with your logo file e.g. /assets/images/logo.svg -->
+      <img src="/assets/images/arrukolabslogo.svg" alt="Arruko Labs" class="logo-img" />
+    </a>
+
+    <nav class="site-nav" id="site-nav">
+      {% if page.lang == 'es' %}
+        <a href="/es/servicios/">Servicios</a>
+        <a href="/es/blog/">Blog</a>
+        <a href="/es/sobre/">Nosotros</a>
+        <a href="/es/contacto/" class="cta-link">Agendar llamada</a>
+        <a href="/en/" class="lang-switch">EN</a>
+      {% else %}
+        <a href="/en/services/">Services</a>
+        <a href="/en/blog/">Blog</a>
+        <a href="/en/about/">About</a>
+        <a href="/en/contact/" class="cta-link">Book a call</a>
+        <a href="/es/" class="lang-switch">ES</a>
+      {% endif %}
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

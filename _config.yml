@@ -1,0 +1,50 @@
+title: Arruko Labs
+description: AI systems and automation studio
+baseurl: ""
+url: "https://arruko.labs" # update with real domain
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: "es"
+    values:
+      lang: es
+      layout: page
+  - scope:
+      path: "en"
+    values:
+      lang: en
+      layout: page
+  - scope:
+      path: "_posts/es"
+    values:
+      lang: es
+      layout: post
+  - scope:
+      path: "_posts/en"
+    values:
+      lang: en
+      layout: post
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

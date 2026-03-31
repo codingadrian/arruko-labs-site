@@ -1,0 +1,15 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Conocimiento disperso</title>
+  <g stroke="#0B1020" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="24" cy="26" r="5"/>
+    <circle cx="49" cy="20" r="5"/>
+    <circle cx="72" cy="34" r="5"/>
+    <circle cx="34" cy="54" r="5"/>
+    <circle cx="60" cy="60" r="5"/>
+    <circle cx="20" cy="72" r="5"/>
+    <path d="M29 27L44 22" opacity="0.55"/>
+    <path d="M37 50L46 25" opacity="0.45"/>
+    <path d="M38 56L55 59" opacity="0.55"/>
+    <path d="M65 57L70 39" opacity="0.45"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <!-- Replace: swap img src with your logo file e.g. /assets/images/logo-white.svg -->
+        <img src="/assets/images/arrukolabslogo-dark-mode.svg" alt="Arruko Labs" class="logo-img logo-img--footer" />
+        <p class="footer-tagline">
+          {% if page.lang == 'es' %}
+            Sistemas de IA y automatización.
+          {% else %}
+            AI systems and automation.
+          {% endif %}
+        </p>
+      </div>
+
+      <div class="footer-links">
+        {% if page.lang == 'es' %}
+          <a href="/es/servicios/">Servicios</a>
+          <a href="/es/blog/">Blog</a>
+          <a href="/es/sobre/">Nosotros</a>
+          <a href="/es/contacto/">Contacto</a>
+        {% else %}
+          <a href="/en/services/">Services</a>
+          <a href="/en/blog/">Blog</a>
+          <a href="/en/about/">About</a>
+          <a href="/en/contact/">Contact</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <p class="footer-copy">
+      &copy; {{ 'now' | date: "%Y" }} Arruko Labs.
+      {% if page.lang == 'es' %}Todos los derechos reservados.{% else %}All rights reserved.{% endif %}
+    </p>
+  </div>
+</footer>

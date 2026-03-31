@@ -1,0 +1,116 @@
+---
+layout: page
+lang: es
+title: Contacto
+description: Escríbenos. La primera conversación es gratuita.
+---
+
+<div class="contact-page">
+
+  <p class="contact-intro">La primera conversación es gratuita y sin compromiso. Cuéntanos qué está pasando en tu organización. Si podemos ayudarte, te diremos cómo.</p>
+
+  <div class="contact-layout">
+
+    <div class="contact-form-wrapper">
+      <h2>Envíanos un mensaje</h2>
+      <!-- Form will be connected to Google Sheets via Apps Script -->
+      <form class="contact-form" id="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre completo <span class="required">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="tu@empresa.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="empresa">Empresa u organización</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa (opcional)">
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">¿Qué te interesa?</label>
+          <select id="servicio" name="servicio">
+            <option value="" disabled selected>Seleccionar servicio</option>
+            <option value="conocimiento">Asistente de conocimiento interno</option>
+            <option value="atencion">Agente de atención al cliente</option>
+            <option value="automatizacion">Automatización de flujos</option>
+            <option value="consultoria">Consultoría de estrategia IA</option>
+            <option value="otro">No estoy seguro / Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Cuéntanos tu situación <span class="required">*</span></label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe brevemente el problema que quieres resolver o lo que necesitas..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+
+        <p class="form-note">Respondemos en menos de 24 horas en días hábiles.</p>
+      </form>
+
+      <div class="form-success" id="form-success" style="display:none;">
+        <h3>✓ Mensaje recibido</h3>
+        <p>Gracias, te contactamos pronto.</p>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h2>O contáctanos directamente</h2>
+
+      <div class="contact-info-item">
+        <img src="/assets/images/arruko-labs-svg-icons/correo.svg" alt="Correo" class="contact-icon">
+        <div>
+          <p class="contact-info-label">Correo</p>
+          <a href="mailto:hola@arruko.ai">hola@arruko.ai</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <img src="/assets/images/arruko-labs-svg-icons/whatsapp.svg" alt="WhatsApp" class="contact-icon">
+        <div>
+          <p class="contact-info-label">WhatsApp</p>
+          <a href="https://wa.me/50600000000" target="_blank">Escribir por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <img src="/assets/images/arruko-labs-svg-icons/ubicacion.svg" alt="Ubicación" class="contact-icon">
+        <div>
+          <p class="contact-info-label">Ubicación</p>
+          <p>Costa Rica — atendemos clientes en toda Latinoamérica</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx_IOp_RmgPm994oG9-pImunyUUdG41g-5JSVaDl73U-IMtF-vyQ5Hsj-Ydo3KbvA/exec' // Paste your URL here
+  const form = document.getElementById('contact-form')
+  const successMessage = document.getElementById('form-success')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    // Optional: Change button text to "Sending..."
+    const submitButton = form.querySelector('button[type="submit"]')
+    submitButton.disabled = true
+    submitButton.innerText = 'Enviando...'
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        form.style.display = 'none'
+        successMessage.style.display = 'block'
+      })
+      .catch(error => {
+        console.error('Error!', error.message)
+        submitButton.disabled = false
+        submitButton.innerText = 'Error. Intentar de nuevo'
+      })
+  })
+</script>
