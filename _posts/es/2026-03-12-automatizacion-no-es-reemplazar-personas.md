@@ -55,4 +55,4 @@ Si las respuestas son claras, hay valor. Si no, no construimos nada.
 
 ---
 
-¿Tienes un proceso en mente que podría automatizarse? [Cuéntanos](/es/contacto/) y lo evaluamos juntos.
+¿Tienes un proceso en mente que podría automatizarse? [Cuéntanos]({{ site.baseurl }}/es/contacto/) y lo evaluamos juntos.

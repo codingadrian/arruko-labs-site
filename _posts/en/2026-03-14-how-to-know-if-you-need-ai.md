@@ -47,4 +47,4 @@ If the answer is vague or nonexistent, the project isn't justified. If the answe
 
 ---
 
-Want to do that evaluation for your organization? [Let's talk](/en/contact/).
+Want to do that evaluation for your organization? [Let's talk]({{ site.baseurl }}/en/contact/).

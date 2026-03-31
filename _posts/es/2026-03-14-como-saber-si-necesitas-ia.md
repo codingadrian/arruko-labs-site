@@ -47,4 +47,4 @@ Si la respuesta es vaga o no existe, el proyecto no está justificado. Si la res
 
 ---
 
-¿Quieres hacer esa evaluación para tu organización? [Hablamos](/es/contacto/).
+¿Quieres hacer esa evaluación para tu organización? [Hablamos]({{ site.baseurl }}/es/contacto/).

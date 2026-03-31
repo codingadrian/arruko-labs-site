@@ -52,4 +52,4 @@ Un agente mal diseñado frustra a los clientes. Uno bien diseñado los deleita.
 
 ---
 
-Si tienes un negocio con alto volumen de mensajes de WhatsApp, [hablemos](/es/contacto/) sobre cómo podría funcionar para ti.
+Si tienes un negocio con alto volumen de mensajes de WhatsApp, [hablemos]({{ site.baseurl }}/es/contacto/) sobre cómo podría funcionar para ti.

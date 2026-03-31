@@ -46,4 +46,4 @@ From there, you can design a system that works for your specific operation.
 
 ---
 
-If you have questions about how this would apply to your organization, [write to us](/en/contact/).
+If you have questions about how this would apply to your organization, [write to us]({{ site.baseurl }}/en/contact/).

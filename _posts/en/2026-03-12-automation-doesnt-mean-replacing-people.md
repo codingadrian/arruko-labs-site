@@ -55,4 +55,4 @@ If the answers are clear, there's value. If not, we don't build anything.
 
 ---
 
-Do you have a process in mind that could be automated? [Tell us](/en/contact/) and we'll evaluate it together.
+Do you have a process in mind that could be automated? [Tell us]({{ site.baseurl }}/en/contact/) and we'll evaluate it together.

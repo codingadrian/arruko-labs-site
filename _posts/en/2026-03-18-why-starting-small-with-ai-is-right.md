@@ -48,4 +48,4 @@ We don't build eternal systems. We build something that works, test it, and deci
 
 ---
 
-Do you have a concrete problem you want to solve with AI? [Let's talk](/en/contact/) about what a pilot would look like for your organization.
+Do you have a concrete problem you want to solve with AI? [Let's talk]({{ site.baseurl }}/en/contact/) about what a pilot would look like for your organization.

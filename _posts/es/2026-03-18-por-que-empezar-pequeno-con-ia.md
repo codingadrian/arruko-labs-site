@@ -48,4 +48,4 @@ No construimos sistemas eternos. Construimos algo que funciona, lo probamos, y d
 
 ---
 
-¿Tienes un problema concreto que quieres resolver con IA? [Hablemos](/es/contacto/) sobre cómo sería un piloto para tu organización.
+¿Tienes un problema concreto que quieres resolver con IA? [Hablemos]({{ site.baseurl }}/es/contacto/) sobre cómo sería un piloto para tu organización.

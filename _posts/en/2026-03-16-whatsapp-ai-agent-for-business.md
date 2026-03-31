@@ -52,4 +52,4 @@ A poorly designed agent frustrates customers. A well-designed one delights them.
 
 ---
 
-If you have a business with high WhatsApp message volume, [let's talk](/en/contact/) about how this could work for you.
+If you have a business with high WhatsApp message volume, [let's talk]({{ site.baseurl }}/en/contact/) about how this could work for you.

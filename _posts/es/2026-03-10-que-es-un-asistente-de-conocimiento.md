@@ -46,4 +46,4 @@ A partir de ahí, se puede diseñar un sistema que funcione para tu operación e
 
 ---
 
-Si tienes preguntas sobre cómo aplicaría esto en tu organización, [escríbenos](/es/contacto/).
+Si tienes preguntas sobre cómo aplicaría esto en tu organización, [escríbenos]({{ site.baseurl }}/es/contacto/).
