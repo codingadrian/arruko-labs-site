@@ -3,7 +3,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <!-- Replace: swap img src with your logo file e.g. /assets/images/logo-white.svg -->
-        <img src="/assets/images/arrukolabslogo-dark-mode.svg" alt="Arruko Labs" class="logo-img logo-img--footer" />
+        <img src="{{ site.baseurl }}/assets/images/arrukolabslogo-dark-mode.svg" alt="Arruko Labs" class="logo-img logo-img--footer" />
         <p class="footer-tagline">
           {% if page.lang == 'es' %}
             Sistemas de IA y automatización.
@@ -15,15 +15,15 @@
 
       <div class="footer-links">
         {% if page.lang == 'es' %}
-          <a href="/es/servicios/">Servicios</a>
-          <a href="/es/blog/">Blog</a>
-          <a href="/es/sobre/">Nosotros</a>
-          <a href="/es/contacto/">Contacto</a>
+          <a href="{{ site.baseurl }}/es/servicios/">Servicios</a>
+          <a href="{{ site.baseurl }}/es/blog/">Blog</a>
+          <a href="{{ site.baseurl }}/es/sobre/">Nosotros</a>
+          <a href="{{ site.baseurl }}/es/contacto/">Contacto</a>
         {% else %}
-          <a href="/en/services/">Services</a>
-          <a href="/en/blog/">Blog</a>
-          <a href="/en/about/">About</a>
-          <a href="/en/contact/">Contact</a>
+          <a href="{{ site.baseurl }}/en/services/">Services</a>
+          <a href="{{ site.baseurl }}/en/blog/">Blog</a>
+          <a href="{{ site.baseurl }}/en/about/">About</a>
+          <a href="{{ site.baseurl }}/en/contact/">Contact</a>
         {% endif %}
       </div>
     </div>
