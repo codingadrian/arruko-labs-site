@@ -38,11 +38,13 @@ defaults:
     values:
       lang: es
       layout: post
+      permalink: /es/blog/:year/:month/:day/:title/
   - scope:
       path: "_posts/en"
     values:
       lang: en
       layout: post
+      permalink: /en/blog/:year/:month/:day/:title/
 
 # Plugins
 plugins:
